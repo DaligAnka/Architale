@@ -1,0 +1,50 @@
+@use '../base/vars';
+@use '../base/mixins';
+
+.form {
+
+}
+
+.form__input{
+padding: 12px;
+height:50px  ;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.774);
+transition: background-color 0.3s ease-in;
+
+&:focus{
+    background-color: rgba(0, 0, 0, 0.521);
+
+}
+
+}
+
+.form__privacy{
+font-family: vars.$font-main;
+font-size: 13px;
+text-align: center;
+line-height: 1.23;
+
+&--bottom {
+    @include mixins.mediaTablet{
+        grid-row: 4/5;
+    }
+}
+
+
+}
+
+.form__btn{
+height: 50px;
+padding: 12px;
+color: vars.$white;
+text-align: center;
+background-color: vars.$accent;
+transition: background-color 0.4s ease-in;
+
+
+&:hover{
+    background-color: saturate(vars.$accent, 50%) ;
+}
+
+}

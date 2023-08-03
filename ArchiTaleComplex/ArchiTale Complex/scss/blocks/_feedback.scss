@@ -1,0 +1,35 @@
+@use '../base/mixins';
+
+.feedback{
+padding-bottom: 180px;
+
+@include mixins.mediaTablet{
+    padding-bottom: 90px;
+}
+
+}
+
+.feedback-title{
+ margin-bottom: 38px;
+}
+
+.feedback__form{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 30px;
+align-items: center;
+
+
+
+@include mixins.mediaTablet{
+    grid-template-columns: 1fr;
+}
+
+}
+
+// .feedback-title {
+//    .title-2{
+//     text-align: center;
+//    }
+// }
+

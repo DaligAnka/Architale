@@ -1,0 +1,78 @@
+@use '../base/vars';
+@use '../base/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Handjet:wght@300&family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+
+
+body {
+font-family: vars.$font-main;
+background-color: vars.$dark;
+color: vars.$white;
+font-size: 16px;
+
+
+}
+
+a {
+    color: vars.$white;
+    transition: all 0.2s ease-in;
+
+&:hover {
+    color: vars.$accent;
+}
+
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+
+
+    &--sm {
+        width: 842px;
+    }
+   
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.visually-hidden{
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+
+position: absolute;
+white-space: nowrap;
+
+}
+
+
+.none {
+    display: none !important;
+}
+
+.title-2{
+font-size: 36px;
+font-family: vars.$font-accent;
+color: vars.$accent;
+font-weight: 700;
+
+@include mixins.mediaTablet{
+font-size: 26px;
+}
+
+
+}
+
+.link-bold{
+    color: vars.$accent;
+    font-weight: 700;
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}

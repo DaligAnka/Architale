@@ -1,0 +1,25 @@
+@use '../base/mixins';
+
+.section-map{
+    position: relative;
+    padding: 10px 0 180px 0;
+
+
+    
+}
+
+.section-map__title{
+margin: 88px;
+text-align: center;
+
+@include mixins.mediaTablet{
+    padding: 44px;
+}
+
+}
+
+.map{
+    background: #9c7e7e;
+    height: 358px;
+ 
+}
