@@ -4,11 +4,20 @@
 
 
 
+
 body {
 font-family: vars.$font-main;
 background-color: vars.$dark;
 color: vars.$white;
 font-size: 16px;
+
+@media (width < 900px) {
+    width: fit-content;
+height: max-content;
+overflow: scroll;
+
+}
+
 
 
 }

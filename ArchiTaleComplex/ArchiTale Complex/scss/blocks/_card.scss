@@ -15,10 +15,21 @@ display: inline-block;
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, #242B33 0%, rgba(36, 43, 51, 0) 0.01%, #812136 100%);
+
+    @media (width < 958px) {
+        width: 20em;
+    }
+    
+
+
+}
+
+@media (width < 958px) {
+    width: 20em;
     
 }
 
-
+//Or here
 &::after{
     
     opacity: 0;
@@ -109,20 +120,11 @@ display: inline-block;
 
 
 
-
-
-
-
-
-
-
-
-
-
 }
 
 .card__title{
 transition: transform 1.4s ease-out;
+
 
 }
 

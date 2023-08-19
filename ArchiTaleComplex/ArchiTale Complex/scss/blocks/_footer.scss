@@ -31,6 +31,8 @@ gap: 30px;
 }
 
 .footer__nav{
+    
+
 }
 
 .footer__nav-list{
@@ -51,4 +53,10 @@ display: flex;
 column-gap: 10px;
 justify-content: space-evenly;
 margin-left: -40px;
+
+
+@media (width < 900px) {
+    justify-content: space-around;
+   }
+
 }
